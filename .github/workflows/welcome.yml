@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: gh pr comment $PR_URL --body "Welcome to the repository!"
         env:
-          GITHUB TOKEN: ${{ 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 }}
+          GITHUB TOKEN: ${{ secrets.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 }}
           PR_URL: ${{ github.event.pull_request.html_url }}
 
   
